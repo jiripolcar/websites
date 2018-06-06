@@ -1,57 +1,77 @@
 html * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
     max-width: 1200px;
     margin: 0 auto 0 auto;
 }
 
 .header {
-    background-color: gray;
+    background-color: #041e00;
     text-align: center;
-    padding: 20px;
+    height: 120px;
+    background-image: url("../images/jp_header.png");
+    background-position-x: 50%;
+    background-size: 800px 100%;
+    background-repeat: no-repeat;
 }
-
-
 
 .header h1 {
+    padding-top: 30px;
     color: white;
+    text-shadow: 0px 0px 3px darkgreen;
+    font-size: 30pt;
 }
 
-.header h2 {
-    color: white;
-}
-
-
-.navbar {
+.navbar, .footer {
     overflow: hidden;
-    background-color: #333;
+    background-color: #111111;
     text-align: center;
+    color: white;
 }
 
 .navbar a {
     display: inline-block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 6px 16px;
-    font-size: 18pt;
-    size: 14pt;
+    font-size: 14pt;
+    font-weight: bold;
     text-decoration: none;
 }
 
+.navbar a:hover {
+    text-decoration: none;
+    color: white;
+}
 
 .content {
-    padding: 20pt 30px 20pt 30px;
-    max-width: 1100px;
+    padding: 10pt 20px 10pt 20px;
+}
+
+.content h1 {
+    font-size: 16pt;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 13pt;
+    text-align: center;
+    margin-top: 13pt;
 }
 
 .content p {
     text-align: justify;
-    padding: 10pt 0 10pt 0;
+    padding: 4pt 0 6pt 0;
 }
 
-.footer {
-    background-color: lightgray;
+.content .centered p {
     text-align: center;
-    padding: 20px;
+}
+
+.content iframe {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -62,4 +82,17 @@ a {
 * a:hover {
     text-decoration: underline;
     color: darkblue;
+}
+
+.LI-profile-badge {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar a {
+        display: block;
+    }
 }

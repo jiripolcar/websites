@@ -15,4 +15,3 @@ function includeFooter() {
     document.write("<h1>footer</h1><h2>fodder</h2>");
     document.write("</div>");
 }
-
